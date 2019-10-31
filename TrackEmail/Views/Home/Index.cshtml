@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+<h2>Email Open Status</h2>
+<table id="content"></table>
+
+<script>
+    var users = JSON.parse('@Html.Raw(ViewData["Users"])');
+    var userTableData = [];
+    users.forEach(function (user, idx) {
+        userTableData.push([user.Name, user.EmailOpened]);
+    });
+
+    $('#content').DataTable(
+    {
+        data: userTableData,
+        columns: [{ title: "Name" }, { title: "Email Opened" }]
+    });
+</script>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <User>
+    <Name>John</Name>
+    <Id>1</Id>
+    <Opened>Yes</Opened>
+  </User>
+  <User>
+    <Name>Steve</Name>
+    <Id>2</Id>
+    <Opened>No</Opened>
+  </User>
+  <User>
+    <Name>Sam</Name>
+    <Id>3</Id>
+    <Opened>Yes</Opened>
+  </User>
+  <User>
+    <Name>Calvin</Name>
+    <Id>4</Id>
+    <Opened>Yes</Opened>
+  </User>
+</Data>
